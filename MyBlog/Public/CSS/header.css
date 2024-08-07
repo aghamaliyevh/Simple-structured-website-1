@@ -1,0 +1,62 @@
+.header{
+    margin-top: 77px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.header img{
+    height: 500px;
+    object-fit: cover; 
+    object-position: bottom;  /* 1 */
+}
+
+.header h1,  h3{
+    position: absolute;
+}
+
+.header h1{
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Pacifico", cursive;
+    top: -50px;
+    text-shadow: black -2px -2px 6px;  /* 2 */
+}
+
+.header h3{
+    color: #000;
+    font-size: 2.4rem;
+    font-family: "Satisfy", cursive;
+    top: 70px;
+}
+
+.header {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.header.active{
+    opacity: 1;
+}
+
+.header h1{
+    opacity: 0;
+    transition: all 1.5s;
+}
+.header h3{
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+
+.header h1.active{
+    opacity: 1;
+}
+.header h3.active{
+    opacity: 1;
+}
+
+/* 1 - object-fit: cover olanda sekil merkeze sixilir. eger isteksek ki, o 
+asagi terefe sixilsin onda object-position: bottom; yazacagiq.
+2 - text-sahowda ilk kolgenin rengini gosterir, ikinci soldan, ucuncu yuxaridan, 
+axirinci ise kolgenin bulanqiligini bildirir. */

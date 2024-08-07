@@ -1,0 +1,73 @@
+.about{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.about .wrapper{
+    max-width: 1366px;
+    width: 100%;
+}
+
+.about .wrapper .blogs{
+    padding: 15px;
+}
+
+.wrapper .blogs .blog{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+.blogs .blog-info{
+    flex: 6;
+}
+
+.blogs .blog-image{
+    flex: 6;
+}
+
+.blogs .blog-info h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.blogs .blog-info p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+
+.blogs .blog-info p::before{
+    content: "\00a0\00a0\00a0\00a0";
+}
+
+
+.blogs .blog-image img{
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.blogs .blog-image{
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.blogs .blog-image img:hover{
+    transform: scale(1.2);
+}
+
+
+.wrapper .blogs .blog{
+   opacity: 0;
+   transition: all 0.5s;
+}
+
+.wrapper .blogs .blog.active{
+    opacity: 1;
+ }

@@ -1,0 +1,92 @@
+.register{
+    position: relative;
+}
+
+.register img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: calc(100vh - 50px)
+}
+
+.register .forms{
+    position: absolute;
+    width: 350px;
+    background-color: #492A24;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: #331D19  0px 0px 15px;
+}
+
+.forms .formGroup{
+    height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formGroup input{
+    background-color: #331D19;
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid #331D19;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    padding-left: 10px;
+    font-size: 0.9rem;
+
+}
+
+.formGroup span{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all 0.5s;
+
+}
+
+.forms .formChoises{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formChoises a{
+    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    margin-top: 7px;
+    transition: all 2s;
+    height: 20px;
+}
+
+.formChoises button {
+    background-color: #605551;
+    border: 1px solid #605551;
+    padding: 5px; 
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.formChoises a:hover{
+    border-bottom: 1px solid white;
+}
+
+.formChoises button:hover{
+    cursor: pointer;
+}
+
+.formGroup input:focus~span, .formGroup input:valid~span {
+    background-color: #A33E3C;
+    margin-top: -30px;
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}

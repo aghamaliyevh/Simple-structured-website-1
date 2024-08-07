@@ -1,0 +1,74 @@
+.add{
+    height: 100vh;
+    position: relative;
+}
+
+.add .wrapper{
+    width: 65%;
+    height: 440px;
+    background-color: #D7D7D7;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .forms{
+    flex: 10;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.wrapper .buttons{
+    flex: 2;
+    position: relative;
+}
+
+
+
+.forms input, textarea{
+    width: 100%;
+    margin-bottom: 50px;
+    border: none;
+    padding: 5px;
+    font-family: "Arvo", serif;
+    border-radius: 7px;
+    font-size: 1rem;
+    
+}
+
+
+.forms textarea{
+    height: 200px;
+}
+
+
+.wrapper .buttons button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.wrapper .buttons button:first-child{
+    background-color: #90EE90;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+.wrapper .buttons button:nth-child(2){
+    background-color:#FFE79F ;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
